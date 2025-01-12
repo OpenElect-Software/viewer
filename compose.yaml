@@ -1,0 +1,6 @@
+services:
+  viewer:
+    container_name: viewer
+    build: .
+    ports:
+      - 3000:3000
