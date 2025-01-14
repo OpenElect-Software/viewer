@@ -2,5 +2,7 @@ services:
   viewer:
     container_name: viewer
     build: .
+    environment:
+      - NEXT_PUBLIC_NOSTR_RELAY_URL=wss://relay-openelect.example
     ports:
       - 3000:3000
